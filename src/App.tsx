@@ -1,13 +1,15 @@
-
-import './App.css'
-// import DemoApp from './components/DemoApp'
+import Navbar from './components/Navbar'
+import MainContent from './components/MainContent'
+import Footer from './components/Footer'
 
 function App() {
   
 
   return (
     <>
-      <h1>Hello from main Page</h1>
+      <Navbar/>
+      <MainContent/>
+      <Footer/>
     </>
   )
 }
