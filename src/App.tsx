@@ -1,4 +1,4 @@
-import Navbar from "./components/Navbar";
+import Navbar from "./components/utils/Navbar";
 import MainContent from "./components/MainContent";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DemoApp from "./pages/DemoApp";
