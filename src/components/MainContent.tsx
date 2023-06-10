@@ -1,15 +1,20 @@
 import Hero from "./utils/Hero";
-
 import Footer from "./utils/Footer";
 
 function MainContent() {
   return (
     <>
-      <Hero />
+      <div id="section1">
+        <Hero />
+      </div>
 
-      <h1>Hello from main content</h1>
+      <div id="section2">
+        <h1>Hello from main content</h1>
+      </div>
 
-      <Footer />
+      <div id="section3">
+        <Footer />
+      </div>
     </>
   );
 }
