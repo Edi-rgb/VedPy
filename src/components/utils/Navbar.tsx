@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import MobileNavbar from "./MobileNavbar";
 
 function Navbar() {
   return (
@@ -19,14 +20,15 @@ function Navbar() {
             </a>
           </li>
           <li className="p-4  hover:text-green-200 hover:bg-slate-600 ease-in-out duration-100 rounded-md">
-            <Link to="/demoapp">Demo</Link>
+            <Link to="/demo">Demo</Link>
           </li>
           <li className="p-4  hover:text-green-200 hover:bg-slate-600 ease-in-out duration-100 rounded-md">
-            <Link to="/Download">Download</Link>
+            <Link to="/downloads">Download</Link>
           </li>
         </ul>
 
         {/*  Mobile design */}
+        <MobileNavbar />
       </nav>
     </>
   );
