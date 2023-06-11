@@ -6,7 +6,7 @@ function Navbar() {
     <>
       {/* Desktop design */}
 
-      <nav className="bg-SpecialGray flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4">
+      <nav className="bg-SpecialGray flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 sticky">
         <Link to="/" className="w-full text-3xl font-bold text-green-200">
           VedPy.
         </Link>

@@ -1,4 +1,3 @@
-/* import { Link } from "react-router-dom"; */
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { useState } from "react";
 
@@ -23,10 +22,9 @@ function MobileNavbar() {
               : "ease-in-out duration-500 fixed left-[-100%]"
           }
         >
-          <li className="p-4 border-b border-gray-600">Company</li>
-          <li className="p-4 border-b border-gray-600">Resources</li>
-          <li className="p-4 border-b border-gray-600">About</li>
-          <li className="p-4">Contact</li>
+          <li className="p-4 border-b border-gray-600">HOME</li>
+          <li className="p-4 border-b border-gray-600">GITHUB</li>
+          <li className="p-4">DOWNLOAD</li>
         </ul>
       </nav>
     </>
