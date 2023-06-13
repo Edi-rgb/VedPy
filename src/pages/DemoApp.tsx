@@ -9,7 +9,7 @@ function DemoApp() {
     const handleKeyDown = (event: { key: string; })=> {
         if (event.key === 'ArrowUp') {
           setSelectedButton((prevSelectedButton) => {
-            const newIndex = (prevSelectedButton - 1 + 5) % 5;
+            const newIndex = (prevSelectedButton  -1 + 5) % 5;
             return newIndex;
           })
         }else if (event.key === 'ArrowDown') {
@@ -22,7 +22,7 @@ function DemoApp() {
     window.addEventListener('keydown' , handleKeyDown);
 
     return () => {
-      window.addEventListener('keydown' , handleKeyDown)
+      window.removeEventListener('keydown' , handleKeyDown)
     }
   } , []) 
 
@@ -34,7 +34,7 @@ function DemoApp() {
           <p>Vedpy Personal Data Manager</p>
           <p>Use arrow keys to navigate , Enter to select an option</p>
         <div className="buttons flex flex-col items-center justify-center h-[70vh] text-[30px]">
-          <button className={`${selectedButton === 0 ? 'bg-white text-black' : 'hover:bg-white hover:text-black'}`}>Documentation</button>
+          <button className={`${selectedButton === 0? 'bg-white text-black' : 'hover:bg-white hover:text-black'}`}>Documentation</button>
           <button className={`${selectedButton === 1 ? 'bg-white text-black' : 'hover:bg-white hover:text-black'}`}>Add personal data</button>
           <button className={`${selectedButton === 2 ? 'bg-white text-black' : 'hover:bg-white hover:text-black'}`}>Display pesonal data</button>
           <button className={`${selectedButton === 3 ? 'bg-white text-black' : 'hover:bg-white hover:text-black'}`}>Exit</button>
