@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        SpecialGray: "#1F2937",
+        SpecialGray: "#1B1F24",
         SpecialWhite: "#fafafa",
       },
     },
