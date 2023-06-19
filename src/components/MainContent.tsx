@@ -8,8 +8,8 @@ function MainContent() {
         <Hero />
       </div>
 
-      <div id="section2">
-        <h1>Hello from main content</h1>
+      <div id="section2 " className="root-div">
+        <div className="body-div">test</div>
       </div>
 
       <div id="section3">

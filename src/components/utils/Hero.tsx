@@ -1,18 +1,32 @@
 import { motion } from "framer-motion";
 
+import video from "../../assets/video.mp4";
+import Terminal from "./Terminal";
+
 function Hero() {
   return (
     <>
-      <motion.div
-        initial={{ x: -1000, scale: 0 }}
-        animate={{ x: 0, scale: 1 }}
-        transition={{ duration: 0.7 }}
-        className="font-bold md:text-4xl sm:text-3xl mx-auto flex items-center justify-center md:h-[70vh] flex-col bg-gradient-to-r
-       from-teal-200 to-violet-500 text-transparent bg-clip-text text-center h-[50vh]"
-      >
-        <h1>Be in safe and secure with with Vedpy</h1>
-        <h3>Open source project for manage in secure your password</h3>
-      </motion.div>
+      <div>
+        <video
+          className=" shadow-lg blur-none absolute top-0 left-0 w-full h-full object-cover z-[-1]"
+          autoPlay
+          loop
+          controls={false}
+          muted
+        >
+          <source src={video} type="video/mp4" />
+        </video>
+        <div className=" w-full h-[90vh]">
+          <motion.div
+            initial={{ x: -1000, scale: 0 }}
+            animate={{ x: 0, scale: 1 }}
+            transition={{ duration: 0.7 }}
+            className=" mx-auto flex items-center justify-center md:h-[70vh] flex-col h-[50vh]"
+          >
+            <Terminal />
+          </motion.div>
+        </div>
+      </div>
     </>
   );
 }

@@ -10,6 +10,8 @@ export default {
       colors: {
         SpecialGray: "#1B1F24",
         SpecialWhite: "#fafafa",
+        SpecialGradientColor1: "#02204f",
+        SpecialGradinetColor2: "#3b096b",
       },
     },
   },
