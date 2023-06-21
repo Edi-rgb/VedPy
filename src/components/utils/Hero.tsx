@@ -16,7 +16,7 @@ function Hero() {
         >
           <source src={video} type="video/mp4" />
         </video>
-        <div className=" w-full h-[90vh]">
+        <div className=" w-full h-[88vh]">
           <motion.div
             initial={{ x: -1000, scale: 0 }}
             animate={{ x: 0, scale: 1 }}

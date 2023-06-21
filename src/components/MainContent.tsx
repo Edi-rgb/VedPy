@@ -1,5 +1,6 @@
 import Hero from "./utils/Hero";
 import Footer from "./utils/Footer";
+import Main from "./utils/Main";
 
 function MainContent() {
   return (
@@ -9,7 +10,7 @@ function MainContent() {
       </div>
 
       <div id="section2 " className="root-div">
-        <div className="body-div">test</div>
+        <Main />
       </div>
 
       <div id="section3">
